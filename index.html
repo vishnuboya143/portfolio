@@ -1,1 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vishnu Vardhan | Portfolio</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: white;
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+header {
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+  background: rgba(2, 6, 23, 0.7);
+  padding: 15px;
+  text-align: center;
+}
+
+header h1 {
+  color: #38bdf8;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 40px;
+}
+
+.hero span {
+  color: #38bdf8;
+}
+
+/* BUTTON */
+.btn {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: linear-gradient(45deg, #38bdf8, #0ea5e9);
+  border-radius: 30px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+/* SECTION */
+section {
+  padding: 60px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #38bdf8;
+}
+
+/* GLASS CARD */
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+}
+
+/* TYPING EFFECT */
+#typing {
+  border-right: 2px solid white;
+  padding-right: 5px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Vishnu Vardhan</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#internship">Internship</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <h2>I am <span id="typing"></span></h2>
+  <a href="#projects" class="btn">View My Work</a>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>
+      I am a B.Tech ECE student with a CGPA of 8.5, passionate about software development,
+      cybersecurity, and web technologies. I aim to become a software engineer and build
+      real-world applications.
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="grid">
+    <div class="card">C, C++, Java, Python</div>
+    <div class="card">HTML, CSS, JavaScript</div>
+    <div class="card">Cybersecurity (VAPT, Bug Hunting)</div>
+    <div class="card">Git, GitHub, VS Code</div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="card">
+    <h3>Smart Attendance System</h3>
+    <p>Arduino + RFID based automated attendance tracking system.</p>
+  </div>
+</section>
+
+<!-- INTERNSHIP -->
+<section id="internship">
+  <h2>Internship</h2>
+  <div class="card">
+    <h3>AI Data Analyst Intern</h3>
+    <p>Rooman Technologies (Mar 2025 – May 2025)</p>
+    <ul>
+      <li>Worked on real-time datasets</li>
+      <li>Improved teamwork skills</li>
+      <li>Gained industry experience</li>
+    </ul>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    <p>Email: sathwiksudarshan@gmail.com</p>
+    <p>GitHub: github.com/vishnuboya143</p>
+    <p>LinkedIn: linkedin.com/in/vishnu-vardhan-balimii</p>
+    <br>
+    <a href="Vishnu_Vardhan_CV.pdf" class="btn">Download Resume</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Vishnu Vardhan</p>
+</footer>
+
+<script>
+const text = ["Vishnu Vardhan", "a Developer", "a Problem Solver"];
+let i = 0, j = 0, current = "", isDeleting = false;
+
+function type() {
+  current = text[i];
+  
+  if (!isDeleting) {
+    document.getElementById("typing").innerText = current.substring(0, j++);
+    if (j > current.length) {
+      isDeleting = true;
+      setTimeout(type, 1000);
+      return;
+    }
+  } else {
+    document.getElementById("typing").innerText = current.substring(0, j--);
+    if (j === 0) {
+      isDeleting = false;
+      i = (i + 1) % text.length;
+    }
+  }
+  
+  setTimeout(type, isDeleting ? 50 : 100);
+}
+
+type();
+</script>
+
+</body>
+</html>
