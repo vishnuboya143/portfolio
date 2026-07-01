@@ -3,69 +3,276 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio of Balimi Vishnu Vardhan</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Vishnu Boya - Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Balimi Vishnu Vardhan</h1>
-        <p>Software Developer | Technology Enthusiast</p>
-    </header>
-    <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li>B.Tech in Computer Science, XYZ University, 2022</li>
-        </ul>
-    </section>
-    <section id="technical-skills">
-        <h2>Technical Skills</h2>
-        <ul>
-            <li>Languages: Python, Java, JavaScript</li>
-            <li>Frameworks: React, Node.js</li>
-            <li>Tools: Git, Docker, Jenkins</li>
-        </ul>
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>Project 1: Description of project 1.</li>
-            <li>Project 2: Description of project 2.</li>
-        </ul>
-    </section>
-    <section id="internships">
-        <h2>Internships</h2>
-        <ul>
-            <li>Intern at ABC Corp, Summer 2021</li>
-        </ul>
-    </section>
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <ul>
-            <li>Certified Java Developer</li>
-        </ul>
-    </section>
-    <section id="achievements">
-        <h2>Achievements</h2>
-        <ul>
-            <li>Dean's List, XYZ University</li>
-        </ul>
-    </section>
-    <section id="strengths">
-        <h2>Strengths</h2>
-        <ul>
-            <li>Strong problem-solving skills</li>
-            <li>Effective communication</li>
-        </ul>
-    </section>
-    <section id="personal-details">
-        <h2>Personal Details</h2>
-        <ul>
-            <li>Email: example@example.com</li>
-            <li>LinkedIn: linkedin.com/in/example</li>
-        </ul>
-    </section>
-    <footer>
-        <p>&copy; 2026 Balimi Vishnu Vardhan</p>
-    </footer>
+    <!-- Mobile Preview Toggle -->
+    <div class="preview-controls">
+        <button class="preview-btn" id="mobilePreviewBtn" title="Toggle Mobile Preview">
+            <i class="fas fa-mobile-alt"></i>
+        </button>
+        <button class="theme-toggle" id="themeToggle" title="Toggle Dark/Light Mode">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+
+    <!-- Mobile Preview Container -->
+    <div class="mobile-preview-container" id="mobilePreviewContainer">
+        <div class="mobile-frame">
+            <div class="mobile-notch"></div>
+            <div class="mobile-content" id="mobileContent"></div>
+            <div class="mobile-home-indicator"></div>
+        </div>
+        <button class="close-preview" id="closePreview"><i class="fas fa-times"></i></button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-wrapper">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <h1>VB</h1>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Hi, I'm Vishnu Boya</h1>
+                    <p class="hero-subtitle">Full Stack Developer | Problem Solver | Tech Enthusiast</p>
+                    <p class="hero-description">Building beautiful and functional web applications with cutting-edge technologies</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://github.com/vishnuboya143" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/vishnuboya143" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/vishnuboya143" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="avatar">
+                        <i class="fas fa-code"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I'm a passionate Full Stack Developer with 3+ years of experience building web applications. I specialize in creating intuitive user interfaces and robust backend systems.</p>
+                        <p>My journey in tech started with a curiosity about how things work. Today, I'm committed to writing clean, maintainable code and delivering solutions that make a real impact.</p>
+                        <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing knowledge through technical writing.</p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <h3>50+</h3>
+                                <p>Projects Completed</p>
+                            </div>
+                            <div class="stat">
+                                <h3>30+</h3>
+                                <p>Happy Clients</p>
+                            </div>
+                            <div class="stat">
+                                <h3>3+</h3>
+                                <p>Years Experience</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="avatar-large">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">My Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Vue.js</span>
+                            <span class="skill-tag">Tailwind CSS</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Backend</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Express</span>
+                            <span class="skill-tag">Django</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & Platforms</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">CI/CD</span>
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">Firebase</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Soft Skills</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag">Problem Solving</span>
+                            <span class="skill-tag">Communication</span>
+                            <span class="skill-tag">Team Collaboration</span>
+                            <span class="skill-tag">Project Management</span>
+                            <span class="skill-tag">Mentoring</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div id="projects-container"></div>
+                </div>
+                <div class="view-more">
+                    <a href="https://github.com/vishnuboya143" target="_blank" class="btn btn-primary">View More on GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="blog">
+            <div class="container">
+                <h2 class="section-title">Latest Blog Posts</h2>
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Building Scalable Web Applications</h3>
+                        <p class="blog-date">July 1, 2026</p>
+                        <p>Learn best practices for building web applications that can handle millions of users. We'll explore database optimization, caching strategies, and architectural patterns.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <i class="fas fa-react"></i>
+                        </div>
+                        <h3>Modern React Patterns in 2026</h3>
+                        <p class="blog-date">June 28, 2026</p>
+                        <p>Explore the latest React patterns and best practices. From hooks to server components, discover how to write more efficient and maintainable React code.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Database Design for Performance</h3>
+                        <p class="blog-date">June 25, 2026</p>
+                        <p>Discover how to design efficient databases. We'll cover indexing strategies, query optimization, and common pitfalls to avoid for better application performance.</p>
+                        <a href="#" class="read-more">Read More →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="contact-subtitle">I'd love to hear from you. Whether you have a question or a project idea, feel free to reach out!</p>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p><a href="mailto:hello@vishnuboya.com">hello@vishnuboya.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Your City, Country</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2026 Vishnu Boya. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://github.com/vishnuboya143" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/vishnuboya143" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/vishnuboya143" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
