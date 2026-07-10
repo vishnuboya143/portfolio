@@ -1,278 +1,1117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
+    <head>
+
+    <!-- Basic Meta -->
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vishnu Boya - Full Stack Developer</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+    <!-- SEO -->
+    <title>Vishnu Vardhan | Software Developer & ECE Engineer</title>
+
+    <meta name="description"
+        content="Official portfolio of Vishnu Vardhan, an Electronics and Communication Engineering student and Software Developer specializing in Full Stack Web Development, IoT, AI, and Backend Development.">
+
+    <meta name="keywords"
+        content="Vishnu Vardhan, Portfolio, Software Developer, Full Stack Developer, Web Developer, ECE Engineer, HTML, CSS, JavaScript, Node.js, Python, PostgreSQL, IoT, AI, Machine Learning">
+
+    <meta name="author" content="Vishnu Vardhan">
+
+    <meta name="robots" content="index, follow">
+
+    <meta name="theme-color" content="#0F172A">
+
+    <!-- Open Graph (Social Sharing) -->
+    <meta property="og:title" content="Vishnu Vardhan | Portfolio">
+
+    <meta property="og:description"
+        content="Explore the portfolio of Vishnu Vardhan - Software Developer, ECE Student, and Full Stack Web Developer.">
+
+    <meta property="og:type" content="website">
+
+    <meta property="og:image" content="assets/images/profile/DSC_0684.JPG">
+
+    <meta property="og:url" content="https://yourwebsite.com">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:title" content="Vishnu Vardhan | Portfolio">
+
+    <meta name="twitter:description"
+        content="Official Portfolio of Vishnu Vardhan">
+
+    <meta name="twitter:image"
+        content="assets/images/profile.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/profile/logo.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
 </head>
+
+</head>
+
 <body>
-    <!-- Mobile Preview Toggle -->
-    <div class="preview-controls">
-        <button class="preview-btn" id="mobilePreviewBtn" title="Toggle Mobile Preview">
-            <i class="fas fa-mobile-alt"></i>
-        </button>
-        <button class="theme-toggle" id="themeToggle" title="Toggle Dark/Light Mode">
-            <i class="fas fa-moon"></i>
-        </button>
+
+    <!-- Scroll Progress -->
+<div id="progress-bar"></div>
+
+    <!--================ PRELOADER ================-->
+
+    <div id="preloader">
+        <div class="loader"></div>
     </div>
 
-    <!-- Mobile Preview Container -->
-    <div class="mobile-preview-container" id="mobilePreviewContainer">
-        <div class="mobile-frame">
-            <div class="mobile-notch"></div>
-            <div class="mobile-content" id="mobileContent"></div>
-            <div class="mobile-home-indicator"></div>
-        </div>
-        <button class="close-preview" id="closePreview"><i class="fas fa-times"></i></button>
-    </div>
+    <!--================ HEADER ================-->
 
-    <!-- Main Content -->
-    <div class="main-wrapper">
-        <!-- Navigation -->
+    <header class="header">
+
         <nav class="navbar">
-            <div class="container">
-                <div class="nav-brand">
-                    <h1>VB</h1>
-                </div>
-                <ul class="nav-menu" id="navMenu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="hamburger" id="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+
+            <div class="theme-toggle">
+
+                    <i class="fas fa-moon"></i>
+
             </div>
+
+            <a href="#" class="logo">
+                Vishnu Vardhan Balimi<span>.</span>
+            </a>
+
+            <ul class="nav-links">
+
+                <li><a href="#home">Home</a></li>
+
+                <li><a href="#about">About</a></li>
+
+                <li><a href="#skills">Skills</a></li>
+
+                <li><a href="#projects">Projects</a></li>
+
+                <li><a href="#certificates">Certificates</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+            <div class="menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
         </nav>
 
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <h1 class="hero-title">Hi, I'm Vishnu Boya</h1>
-                    <p class="hero-subtitle">Full Stack Developer | Problem Solver | Tech Enthusiast</p>
-                    <p class="hero-description">Building beautiful and functional web applications with cutting-edge technologies</p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">View My Work</a>
-                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                    </div>
-                    <div class="hero-social">
-                        <a href="https://github.com/vishnuboya143" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="https://linkedin.com/in/vishnuboya143" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://twitter.com/vishnuboya143" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <div class="avatar">
-                        <i class="fas fa-code"></i>
-                    </div>
-                </div>
-            </div>
-        </section>
+    </header>
 
-        <!-- About Section -->
-        <section id="about" class="about">
-            <div class="container">
-                <h2 class="section-title">About Me</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>I'm a passionate Full Stack Developer with 3+ years of experience building web applications. I specialize in creating intuitive user interfaces and robust backend systems.</p>
-                        <p>My journey in tech started with a curiosity about how things work. Today, I'm committed to writing clean, maintainable code and delivering solutions that make a real impact.</p>
-                        <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing knowledge through technical writing.</p>
-                        <div class="about-stats">
-                            <div class="stat">
-                                <h3>50+</h3>
-                                <p>Projects Completed</p>
-                            </div>
-                            <div class="stat">
-                                <h3>30+</h3>
-                                <p>Happy Clients</p>
-                            </div>
-                            <div class="stat">
-                                <h3>3+</h3>
-                                <p>Years Experience</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-image">
-                        <div class="avatar-large">
-                            <i class="fas fa-user-circle"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+  
 
-        <!-- Skills Section -->
-        <section id="skills" class="skills">
-            <div class="container">
-                <h2 class="section-title">My Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3>Frontend</h3>
-                        <div class="skill-list">
-                            <span class="skill-tag">HTML5</span>
-                            <span class="skill-tag">CSS3</span>
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">React</span>
-                            <span class="skill-tag">Vue.js</span>
-                            <span class="skill-tag">Tailwind CSS</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Backend</h3>
-                        <div class="skill-list">
-                            <span class="skill-tag">Node.js</span>
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">Express</span>
-                            <span class="skill-tag">Django</span>
-                            <span class="skill-tag">MongoDB</span>
-                            <span class="skill-tag">PostgreSQL</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Tools & Platforms</h3>
-                        <div class="skill-list">
-                            <span class="skill-tag">Git</span>
-                            <span class="skill-tag">Docker</span>
-                            <span class="skill-tag">AWS</span>
-                            <span class="skill-tag">CI/CD</span>
-                            <span class="skill-tag">Figma</span>
-                            <span class="skill-tag">Firebase</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Soft Skills</h3>
-                        <div class="skill-list">
-                            <span class="skill-tag">Problem Solving</span>
-                            <span class="skill-tag">Communication</span>
-                            <span class="skill-tag">Team Collaboration</span>
-                            <span class="skill-tag">Project Management</span>
-                            <span class="skill-tag">Mentoring</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+   <!--================ HERO =================-->
 
-        <!-- Projects Section -->
-        <section id="projects" class="projects">
-            <div class="container">
-                <h2 class="section-title">Featured Projects</h2>
-                <div class="projects-grid">
-                    <div id="projects-container"></div>
-                </div>
-                <div class="view-more">
-                    <a href="https://github.com/vishnuboya143" target="_blank" class="btn btn-primary">View More on GitHub</a>
-                </div>
-            </div>
-        </section>
+<section class="hero" id="home">
 
-        <!-- Blog Section -->
-        <section id="blog" class="blog">
-            <div class="container">
-                <h2 class="section-title">Latest Blog Posts</h2>
-                <div class="blog-grid">
-                    <article class="blog-card">
-                        <div class="blog-image">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
-                        <h3>Building Scalable Web Applications</h3>
-                        <p class="blog-date">July 1, 2026</p>
-                        <p>Learn best practices for building web applications that can handle millions of users. We'll explore database optimization, caching strategies, and architectural patterns.</p>
-                        <a href="#" class="read-more">Read More →</a>
-                    </article>
+    <!-- Animated Background -->
 
-                    <article class="blog-card">
-                        <div class="blog-image">
-                            <i class="fas fa-react"></i>
-                        </div>
-                        <h3>Modern React Patterns in 2026</h3>
-                        <p class="blog-date">June 28, 2026</p>
-                        <p>Explore the latest React patterns and best practices. From hooks to server components, discover how to write more efficient and maintainable React code.</p>
-                        <a href="#" class="read-more">Read More →</a>
-                    </article>
+    <div class="hero-bg">
 
-                    <article class="blog-card">
-                        <div class="blog-image">
-                            <i class="fas fa-database"></i>
-                        </div>
-                        <h3>Database Design for Performance</h3>
-                        <p class="blog-date">June 25, 2026</p>
-                        <p>Discover how to design efficient databases. We'll cover indexing strategies, query optimization, and common pitfalls to avoid for better application performance.</p>
-                        <a href="#" class="read-more">Read More →</a>
-                    </article>
-                </div>
-            </div>
-        </section>
+        <span class="circle c1"></span>
+        <span class="circle c2"></span>
+        <span class="circle c3"></span>
+        <span class="circle c4"></span>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
-            <div class="container">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="contact-subtitle">I'd love to hear from you. Whether you have a question or a project idea, feel free to reach out!</p>
-                
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <p><a href="mailto:hello@vishnuboya.com">hello@vishnuboya.com</a></p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Phone</h4>
-                                <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Location</h4>
-                                <p>Your City, Country</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="container">
-                <p>&copy; 2026 Vishnu Boya. All rights reserved.</p>
-                <div class="footer-social">
-                    <a href="https://github.com/vishnuboya143" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/vishnuboya143" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://twitter.com/vishnuboya143" target="_blank"><i class="fab fa-twitter"></i></a>
-                </div>
-            </div>
-        </footer>
     </div>
 
-    <script src="script.js"></script>
+    <!-- Left Side -->
+
+    <div class="hero-content" data-aos="fade-right">
+
+        <p class="hero-tag">
+            👋 Hello, I'm
+        </p>
+
+        <h1 class="hero-title">
+
+            Vishnu
+
+            <span>Vardhan</span>
+            <span>Balimi</span>
+
+        </h1>
+
+        <h2>
+
+            <span id="typing"></span>
+
+        </h2>
+
+        <p class="hero-description">
+
+            Passionate Software Developer and Electronics & Communication Engineering student.
+
+            I enjoy building modern websites, backend applications, AI solutions,
+            IoT systems and user-friendly digital experiences.
+
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="assets/resume/Vishnu.Resume.pdf"
+
+                class="btn primary"
+
+                download>
+
+                <i class="fa-solid fa-download"></i>
+
+                Resume
+
+            </a>
+
+            <a href="#projects"
+
+                class="btn secondary">
+
+                <i class="fa-solid fa-code"></i>
+
+                Projects
+
+            </a>
+
+        </div>
+
+        <div class="social-icons">
+
+            <a href="https://github.com/vishnuboya143" target="_blank"><i class="fab fa-github"></i></a>
+
+            <a href="https://www.linkedin.com/in/vishnu-vardhan-balimi?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+            <a href="https://instagram.com/vishnu_boya16" target="_blank"><i class="fab fa-instagram"></i></a>
+
+            <a href="mailto:vishnuvardhanbalimi@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+
+        </div>
+
+    </div>
+
+    <!-- Right Side -->
+
+    <div class="hero-image"
+
+        data-aos="fade-left">
+
+        <div class="profile-card">
+
+            <img src="assets/images/profile/DSC_0684.JPG"
+
+                alt="Vishnu Vardhan, a young man wearing a light checkered shirt and blue lanyard, standing in front of a Ducati logo at an event">
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!--================ ABOUT PLACEHOLDER ================-->
+
+
+<section class="about" id="about">
+
+    <div class="section-title" data-aos="fade-up">
+        <h2>About Me</h2>
+        <p>Get to know me better</p>
+    </div>
+
+    <div class="about-container">
+
+        <!-- Left Card -->
+        <div class="about-left" data-aos="fade-right">
+
+            <img src="assets/images/profile/DSC_0684.JPG" alt="Vishnu Vardhan, a young man wearing a light checkered shirt and blue lanyard, standing in front of a Ducati logo at an event">
+
+            <h3>Vishnu Vardhan</h3>
+
+            <span>Software Developer</span>
+
+            <div class="about-stats">
+
+                <div class="stat">
+                    <h2 class="counter" data-target="10">0</h2>
+                    <p>Projects</p>
+                </div>
+
+                <div class="stat">
+                    <h2>20+</h2>
+                    <p>Certificates</p>
+                </div>
+
+                <div class="stat">
+                    <h2>15+</h2>
+                    <p>Technologies</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Right Side -->
+
+        <div class="about-right" data-aos="fade-left">
+
+            <h3>Who am I?</h3>
+
+            <p>
+
+                I'm <strong>Vishnu Vardhan</strong>, an Electronics and
+                Communication Engineering student with a passion for
+                Software Development, Web Technologies, Backend Development,
+                Artificial Intelligence, and IoT solutions.
+
+                I enjoy building modern, responsive, and user-friendly
+                applications while continuously learning new technologies.
+
+            </p>
+
+            <div class="info-grid">
+
+                <div class="info-card">
+                    <h4>Name</h4>
+                    <span>Vishnu Vardhan Balimi</span>
+                </div>
+
+                <div class="info-card">
+                    <h4>Degree</h4>
+                    <span>B.Tech (ECE)</span>
+                </div>
+
+                <div class="info-card">
+                    <h4>College</h4>
+                    <span>Sri Venkateswara Institute of Technology, Anantapur</span>
+                </div>
+
+                <div class="info-card">
+                    <h4>Location</h4>
+                    <span>Andhra Pradesh, India</span>
+                </div>
+
+                <div class="info-card">
+                    <h4>Email</h4>
+                    <span>vishnuvardhanbalimi@gmail.com</span>
+                </div>
+
+                <div class="info-card">
+                    <h4>Available For</h4>
+                    <span>Internships & Jobs</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+  
+
+<!--================ EDUCATION =================-->
+
+<section class="timeline-section" id="education">
+
+    <div class="section-title" data-aos="fade-up">
+        <h2>Education & Experience</h2>
+        <p>My academic journey and professional growth</p>
+    </div>
+
+    <div class="timeline">
+
+        <div class="timeline-item left" data-aos="fade-right">
+
+            <div class="timeline-content">
+
+                <span class="year">2023 - Present</span>
+
+                <h3>B.Tech - Electronics & Communication Engineering</h3>
+
+                <h4>Sri Venkateswara Institute of Technology, Anantapur</h4>
+
+                <p>
+                    Pursuing B.Tech with a focus on Software Development,
+                    Embedded Systems, IoT, Artificial Intelligence,
+                    and Full Stack Web Development.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="timeline-item right" data-aos="fade-left">
+
+            <div class="timeline-content">
+
+                <span class="year">2020 - 2022</span>
+
+                <h3>Intermediate (MPC)</h3>
+
+                <h4>Board of Intermediate Education</h4>
+
+                <p>
+                    Studied Mathematics, Physics, and Chemistry,
+                    developing strong analytical and problem-solving skills.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="timeline-item left" data-aos="fade-right">
+
+            <div class="timeline-content">
+
+                <span class="year">2019-2020</span>
+
+                <h3>Secondary School Certificate (SSC)</h3>
+
+                <h4>Secondary School of Education, Andhra Pradesh</h4>
+
+                <p>
+                    Completed secondary education with a strong academic foundation.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="timeline-item right" data-aos="fade-left">
+
+            <div class="timeline-content">
+
+                <span class="year">2025 - 2026</span>
+
+                <h3>Software Development Learning Journey</h3>
+
+                <h4>Self Learning & Professional Certifications</h4>
+
+                <p>
+                    Learning HTML, CSS, JavaScript, Node.js, Databases,
+                    Git, GitHub, Backend Development,
+                    Artificial Intelligence and IoT.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+   
+<!--================ SKILLS =================-->
+
+<section class="skills" id="skills">
+
+    
+
+    <div class="section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p>Technologies I work with</p>
+    </div>
+
+    <div class="skills-container">
+
+        <!-- C -->
+
+<div class="skill-card" data-aos="zoom-in">
+    <i class="fa-solid fa-c"></i>
+    <h3>C</h3>
+
+    <div class="progress">
+        <div class="progress-bar" style="width:85%">
+            <span>85%</span>
+        </div>
+    </div>
+</div>
+
+<!-- C++ -->
+
+<div class="skill-card" data-aos="zoom-in">
+    <i class="fa-solid fa-code"></i>
+    <h3>C++</h3>
+
+    <div class="progress">
+        <div class="progress-bar" style="width:80%">
+            <span>80%</span>
+        </div>
+    </div>
+</div>
+
+<div class="skill-card" data-aos="zoom-in">
+            <i class="fa-brands fa-java"></i>
+            <h3>Java</h3>
+
+            <div class="progress">
+                <div class="progress-bar" style="width:75%">
+                    <span>75%</span>
+                </div>
+            </div>
+        </div>
+
+<!-- Express.js -->
+
+<div class="skill-card" data-aos="zoom-in">
+    <i class="fa-solid fa-server"></i>
+    <h3>Express.js</h3>
+
+    <div class="progress">
+        <div class="progress-bar" style="width:78%">
+            <span>78%</span>
+        </div>
+    </div>
+</div>
+
+<!-- MySQL -->
+
+<div class="skill-card" data-aos="zoom-in">
+    <i class="fa-solid fa-database"></i>
+    <h3>MySQL</h3>
+
+    <div class="progress">
+        <div class="progress-bar" style="width:75%">
+            <span>75%</span>
+        </div>
+    </div>
+</div>
+
+<!-- Machine Learning -->
+
+<div class="skill-card" data-aos="zoom-in">
+    <i class="fa-solid fa-brain"></i>
+    <h3>Machine Learning</h3>
+
+    <div class="progress">
+        <div class="progress-bar" style="width:75%">
+            <span>75%</span>
+        </div>
+    </div>
+</div>
+
+<!-- Bug Hunting -->
+
+<div class="skill-card" data-aos="zoom-in">
+    <i class="fa-solid fa-bug"></i>
+    <h3>Bug Hunting</h3>
+
+    <div class="progress">
+        <div class="progress-bar" style="width:65%">
+            <span>65%</span>
+        </div>
+    </div>
+</div>
+
+<!-- Ethical Hacking -->
+
+<div class="skill-card" data-aos="zoom-in">
+    <i class="fa-solid fa-user-secret"></i>
+    <h3>Ethical Hacking</h3>
+
+    <div class="progress">
+        <div class="progress-bar" style="width:70%">
+            <span>70%</span>
+        </div>
+    </div>
+</div>
+
+<!-- Linux -->
+
+<div class="skill-card" data-aos="zoom-in">
+    <i class="fa-brands fa-linux"></i>
+    <h3>Linux</h3>
+
+    <div class="progress">
+        <div class="progress-bar" style="width:72%">
+            <span>72%</span>
+        </div>
+    </div>
+</div>
+
+<!-- Arduino -->
+
+<div class="skill-card" data-aos="zoom-in">
+    <i class="fa-solid fa-microchip"></i>
+    <h3>Arduino</h3>
+
+    <div class="progress">
+        <div class="progress-bar" style="width:82%">
+            <span>82%</span>
+        </div>
+    </div>
+</div>
+
+<!-- ESP32 -->
+
+<div class="skill-card" data-aos="zoom-in">
+    <i class="fa-solid fa-microchip"></i>
+    <h3>ESP32</h3>
+
+    <div class="progress">
+        <div class="progress-bar" style="width:85%">
+            <span>85%</span>
+        </div>
+    </div>
+</div>
+
+<!-- OpenCV -->
+
+<div class="skill-card" data-aos="zoom-in">
+    <i class="fa-solid fa-camera"></i>
+    <h3>OpenCV</h3>
+
+    <div class="progress">
+        <div class="progress-bar" style="width:75%">
+            <span>75%</span>
+        </div>
+    </div>
+</div>
+
+<!-- REST APIs -->
+
+<div class="skill-card" data-aos="zoom-in">
+    <i class="fa-solid fa-plug"></i>
+    <h3>REST APIs</h3>
+
+    <div class="progress">
+        <div class="progress-bar" style="width:80%">
+            <span>80%</span>
+        </div>
+    </div>
+</div>
+        <!-- Frontend -->
+        <div class="skill-card" data-aos="zoom-in">
+            <i class="fa-brands fa-html5"></i>
+            <h3>HTML5</h3>
+
+            <div class="progress">
+                <div class="progress-bar" style="width:95%">
+                    <span>95%</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+            <i class="fa-brands fa-css3-alt"></i>
+            <h3>CSS3</h3>
+
+            <div class="progress">
+                <div class="progress-bar" style="width:92%">
+                    <span>92%</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+            <i class="fa-brands fa-js"></i>
+            <h3>JavaScript</h3>
+
+            <div class="progress">
+                <div class="progress-bar" style="width:85%">
+                    <span>85%</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+            <i class="fa-brands fa-node-js"></i>
+            <h3>Node.js</h3>
+
+            <div class="progress">
+                <div class="progress-bar" style="width:80%">
+                    <span>80%</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-card" data-aos="zoom-in">
+            <i class="fa-solid fa-database"></i>
+            <h3>PostgreSQL</h3>
+
+            <div class="progress">
+                <div class="progress-bar" style="width:80%">
+                    <span>80%</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill-card" data-aos="zoom-in">
+            <i class="fa-brands fa-python"></i>
+            <h3>Python</h3>
+
+            <div class="progress">
+                <div class="progress-bar" style="width:78%">
+                    <span>78%</span>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="skill-card" data-aos="zoom-in">
+            <i class="fa-brands fa-git-alt"></i>
+            <h3>Git & GitHub</h3>
+
+            <div class="progress">
+                <div class="progress-bar" style="width:82%">
+                    <span>82%</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+   <!-- ================= PROJECTS ================= -->
+
+<section class="projects-section" id="projects">
+
+    <div class="section-title" data-aos="fade-up">
+        <h2>Featured Projects</h2>
+        <p>Projects that demonstrate my skills and passion for technology.</p>
+    </div>
+
+    <!-- Filter Buttons -->
+
+    <div class="project-filter" data-aos="fade-up">
+
+        <button class="filter-btn active" data-filter="all">All</button>
+
+        <button class="filter-btn" data-filter="web">Web</button>
+
+        <button class="filter-btn" data-filter="ai">AI / ML</button>
+
+        <button class="filter-btn" data-filter="iot">IoT</button>
+
+    </div>
+
+    <div class="projects-grid">
+
+        <!-- Project 1 -->
+
+        <div class="project-card" data-category="iot" data-aos="zoom-in">
+
+            <img src="assets/images/projects/smart_attandance.png" alt="Smart Attendance">
+
+            <div class="project-info">
+
+                <h3>Smart Attendance System</h3>
+
+                <p>
+
+                    Smart attendance using ESP32, RFID, Face Recognition,
+                    Excel automation, and LCD Display.
+
+                </p>
+
+                <div class="project-tags">
+
+                    <span>ESP32</span>
+                    <span>Python</span>
+                    <span>OpenCV</span>
+                    <span>RFID</span>
+
+                </div>
+
+                <div class="project-links">
+
+                    <a href="#">
+                        <i class="fab fa-github"></i>
+                        GitHub
+                    </a>
+
+                    <a href="#">
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+                        Demo
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Project 2 -->
+
+        <div class="project-card" data-category="web" data-aos="zoom-in">
+
+            <img src="assets/images/projects/department_site.jpeg" alt="SVIT">
+
+            <div class="project-info">
+
+                <h3>SVIT ECE Department Website</h3>
+
+                <p>
+
+                    Responsive website with PostgreSQL backend,
+                    registration portal and admin dashboard.
+
+                </p>
+
+                <div class="project-tags">
+
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Node.js</span>
+
+                </div>
+
+                <div class="project-links">
+
+                    <a href="https://github.com/vishnuboya143/SVIT">
+                        <i class="fab fa-github"></i>
+                        GitHub
+                    </a>
+
+                    <a href="https://sviteceatp.pages.dev/">
+                        <i class="fas fa-arrow-up-right-from-square"></i>
+                        Live
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Project 3 -->
+
+        <div class="project-card" data-category="ai" data-aos="zoom-in">
+
+            <img src="assets/images/projects/fake_apps.png" alt="ML">
+
+            <div class="project-info">
+
+                <h3>Fake Apps Detection using Machine Learning</h3>
+
+                <p>
+
+                    Detecting fake apps and malicious websites using
+                    Machine Learning algorithms.
+
+                </p>
+
+                <div class="project-tags">
+
+                    <span>Python</span>
+                    <span>Scikit-Learn</span>
+                    <span>Pandas</span>
+                    <span>Matplotlib</span>
+
+                </div>
+
+                <div class="project-links">
+
+                    <a href="#">
+                        <i class="fab fa-github"></i>
+                        GitHub
+                    </a>
+
+                    <a href="#">
+                        <i class="fas fa-file-pdf"></i>
+                        Report
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!--================ CERTIFICATES =================-->
+
+<section class="certificates" id="certificates">
+
+    <div class="section-title" data-aos="fade-up">
+
+        <h2>Certificates & Achievements</h2>
+
+        <p>Courses, internships and accomplishments</p>
+
+    </div>
+
+    <div class="certificate-grid">
+
+        <!-- Certificate 1 -->
+
+        <div class="certificate-card" data-aos="zoom-in">
+
+            <img src="assets/images/certificates/ml.jpg" alt="Machine Learning">
+
+            <div class="certificate-info">
+
+                <h3>Machine Learning Internship</h3>
+
+                <p>
+                    Successfully completed a Machine Learning internship with hands-on
+                    experience in data preprocessing, model building and evaluation.
+                </p>
+
+                <a href="#" class="certificate-btn">
+                    View Certificate
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Certificate 2 -->
+
+        <div class="certificate-card" data-aos="zoom-in" data-aos-delay="100">
+
+            <img src="assets/images/certificates/python.jpg" alt="Python">
+
+            <div class="certificate-info">
+
+                <h3>Python Programming</h3>
+
+                <p>
+                    Completed a professional Python programming course covering
+                    automation, OOP and real-world applications.
+                </p>
+
+                <a href="#" class="certificate-btn">
+                    View Certificate
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Certificate 3 -->
+
+        <div class="certificate-card" data-aos="zoom-in" data-aos-delay="200">
+
+            <img src="assets/images/certificates/web.jpg" alt="Web Development">
+
+            <div class="certificate-info">
+
+                <h3>Web Development</h3>
+
+                <p>
+                    Learned HTML5, CSS3, JavaScript, responsive design and modern
+                    frontend development practices.
+                </p>
+
+                <a href="#" class="certificate-btn">
+                    View Certificate
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Certificate 4 -->
+
+        <div class="certificate-card" data-aos="zoom-in" data-aos-delay="300">
+
+            <img src="assets/images/certificates/iot.jpg" alt="IoT">
+
+            <div class="certificate-info">
+
+                <h3>IoT & Embedded Systems</h3>
+
+                <p>
+                    Developed practical skills in ESP32, Arduino, sensors, RFID and
+                    embedded programming.
+                </p>
+
+                <a href="#" class="certificate-btn">
+                    View Certificate
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+   <!--================ CONTACT =================-->
+
+<section class="contact" id="contact">
+
+    <div class="section-title" data-aos="fade-up">
+
+        <h2>Contact Me</h2>
+
+        <p>Let's build something amazing together.</p>
+
+    </div>
+
+    <div class="contact-container">
+
+        <!-- Left Side -->
+
+        <div class="contact-info" data-aos="fade-right">
+
+            <div class="contact-card">
+
+                <i class="fas fa-user"></i>
+
+                <div>
+
+                    <h3>Name</h3>
+
+                    <p>Vishnu Vardhan Balimi</p>
+
+                </div>
+
+            </div>
+
+            <div class="contact-card">
+
+                <i class="fas fa-envelope"></i>
+
+                <div>
+
+                    <h3>Email</h3>
+
+                    <p>vishnuvardhanbalimi@gmail.com</p>
+
+                </div>
+
+            </div>
+
+            <div class="contact-card">
+
+                <i class="fas fa-phone"></i>
+
+                <div>
+
+                    <h3>Phone</h3>
+
+                    <p>+91 7207303610</p>
+
+                </div>
+
+            </div>
+
+            <div class="contact-card">
+
+                <i class="fas fa-location-dot"></i>
+
+                <div>
+
+                    <h3>Location</h3>
+
+                    <p>Guntakal, Ananthapuram,Andhra Pradesh, India</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Right Side -->
+
+        <div class="contact-form" data-aos="fade-left">
+
+            <form>
+
+                <input type="text" placeholder="Your Name" required>
+
+                <input type="email" placeholder="Your Email" required>
+
+                <input type="text" placeholder="Subject" required>
+
+                <textarea rows="6" placeholder="Write your message..." required></textarea>
+
+                <button type="submit" class="btn primary">
+
+                    Send Message
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+    <!--================ FOOTER ================-->
+
+
+       <footer>
+
+<h2>Vishnu Vardhan Balimi</h2>
+
+<p>
+
+Building modern web experiences with creativity and code.
+
+</p>
+
+<div class="footer-icons">
+
+<a href="https://github.com/vishnuvardhanbalimi"><i class="fab fa-github"></i></a>
+
+<a href="https://www.linkedin.com/in/vishnuvardhanbalimi"><i class="fab fa-linkedin"></i></a>
+
+<a href="https://www.instagram.com/vishnu_boya16"><i class="fab fa-instagram"></i></a>
+
+<a href="https://twitter.com/vishnuvardhanb"><i class="fab fa-x-twitter"></i></a>
+
+</div>
+
+<p>
+
+© 2026 All Rights Reserved.
+
+</p>
+
+</footer>
+
+
+    <!-- Typed JS -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- JS -->
+    <script src="assets/js/main.js"></script>
+
+        <button id="topBtn">
+
+<i class="fas fa-arrow-up"></i>
+
+</button>
+    <div class="cursor"></div>
 </body>
+
 </html>
